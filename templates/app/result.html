@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load float_format %}
+
+{% block title %} Result {% endblock %}
+
+
+{% block content %}
+    
+    <h1>Result Page</h1>
+    <hr>
+    <p>Category: {{ result.category }}</p>
+    <p>Total question : {{ result.total_question }}</p>
+    <p>Total answer: {{ result.total_correct }}</p>
+    <p>Total Score: {{ result.score|float_format:3 }}</p>
+
+{% endblock %}

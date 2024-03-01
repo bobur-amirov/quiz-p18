@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ category.name }} {% endblock %}
+
+
+{% block content %}
+    <h3>Question List</h3>
+    <hr>
+    <form method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <p>{{ question.name }}</p>
+        {% for answer in question.answers.all %}
+            <label>{{ answer.name }}</label>
+            <input type="radio" name="{{ question.name }}" value="{{ answer.pk }}">
+        {% endfor %}
+    {% endfor %}
+    <br>
+    <br>
+    <button type="submit">Yuborish</button>
+    </form>
+
+{% endblock %}

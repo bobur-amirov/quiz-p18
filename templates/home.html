@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+    
+    <h1>Home Page</h1>
+
+    <hr>
+    {% for category in categories %}
+    <a href="{% url 'app:question_list' category.slug %}">{{ category.name }}</a>
+    {% endfor %}
+
+{% endblock %}
