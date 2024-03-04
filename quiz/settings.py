@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--y+5(wzjcm)$bkfre^g+wdt3k!_1-e1$ld#y(6@!w0wm*mw8#x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['quiztestpro.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
