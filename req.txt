@@ -4,6 +4,7 @@ diff-match-patch==20230430
 Django==5.0.2
 django-filter==23.5
 django-import-export==3.3.7
+django-jazzmin==2.6.0
 et-xmlfile==1.1.0
 MarkupPy==1.14
 odfpy==1.4.1
