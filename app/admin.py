@@ -9,7 +9,7 @@ from .models import Category, Question, Answer, Result
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'question_count']
     search_fields = ['name']
-    readonly_fields = ['slug']
+    # readonly_fields = ['slug']
 
     def question_count(self, obj):
         return obj.question_set.count()
