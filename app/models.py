@@ -11,6 +11,11 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = 'kategoriya'
+        verbose_name_plural = 'kategoriyalar'
+        ordering = ['-name']
+
 
 class Question(models.Model):
     name = models.CharField(max_length=255, unique=True)
